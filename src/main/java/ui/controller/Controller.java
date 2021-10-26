@@ -2,16 +2,11 @@ package ui.controller;
 
 import java.io.IOException;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
-
-import domain.model.Role;
-import domain.model.User;
 
 /**
  * Servlet implementation class Controller
@@ -70,8 +65,6 @@ public class Controller extends HttpServlet {
         if (!response.isCommitted()) {
             request.getRequestDispatcher(destination).forward(request, response);
         }
-
-
     }
 
 
